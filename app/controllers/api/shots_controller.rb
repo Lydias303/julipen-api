@@ -1,4 +1,4 @@
-class ShotsController < ApplicationController
+class Api::ShotsController < ApplicationController
   before_action :set_shot, only: [:show, :update, :destroy]
 
   # GET /shots
