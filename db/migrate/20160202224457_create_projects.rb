@@ -4,7 +4,6 @@ class CreateProjects < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.references :user, index: true, foreign_key: true
-      t.references :shots, index: true, foreign_key: true
 
       t.timestamps null: false
     end
