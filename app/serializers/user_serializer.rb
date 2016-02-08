@@ -1,6 +1,4 @@
-class UserSerializer < ActiveModel::Serializer
-  embed :ids, embed_in_root: true
-  
+class UserSerializer < ActiveModel::Serializer  
   attributes :id, :name, :email_address
   
   has_many :projects
